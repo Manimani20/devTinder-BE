@@ -30,7 +30,6 @@ authRouter.post(
         email,
         password: hashedPassword
       });
-      console.log(user);
       const userData = await user.save();
       res
         .status(201)
